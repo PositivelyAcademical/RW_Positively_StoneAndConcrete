@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+
+        <!--  ====  Silver ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Silver"]/stuffProps/statFactors/Flammability</xpath>
+                <value>
+                    <Flammability>0.10</Flammability>
+                </value>
+            </li>
+
+
+        <!--  ====  Gold  ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Gold"]/stuffProps/statFactors/Flammability</xpath>
+                <value>
+                    <Flammability>0.10</Flammability>
+                </value>
+            </li>
+
+
+        <!--  ====  Steel  ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
+                <value>
+                    <Flammability>0.10</Flammability>
+                </value>
+            </li>
+
+
+        </operations>
+    </Operation>
+
+</Patch>
