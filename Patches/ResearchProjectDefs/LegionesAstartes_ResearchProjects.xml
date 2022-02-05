@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Legiones Astartes: Primarch</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+
+
+                    <!--  ==== Imperial metallurgy ====  -->
+
+                <ResearchProjectDef>
+                    <defName>POS_Research_Metals_T4</defName>
+                    <tab>POS_ResearchTab_General</tab>
+                    <label>Imperial metallurgy</label>
+                    <description>With knowledge from the Emperor, refine adamantium and auramite from lesser metals.</description>
+                    <baseCost>5000</baseCost>
+                    <techLevel>Medieval</techLevel>
+                    <prerequisites>
+                        <li>POS_Research_Metals_T3</li>
+                        <li>ImperialMetals</li>
+                        <li>AdvancedFabrication</li>
+                    </prerequisites>
+                    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+                    <requiredResearchFacilities>
+                        <li>MultiAnalyzer</li>
+                    </requiredResearchFacilities>
+                    <researchViewX>6</researchViewX>
+                    <researchViewY>1.4</researchViewY>
+                </ResearchProjectDef>
+
+            </value>
+
+        </match>
+    </Operation>
+
+</Patch>
