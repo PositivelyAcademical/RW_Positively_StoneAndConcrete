@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+    <!--  ==== Rockcrete blocks ==== -->
+    <RecipeDef>
+        <defName>POS_MakeBlocksRockcrete</defName>
+        <label>make rockcrete blocks</label>
+        <description>Smelt stone blocks into rockcrete.</description>
+        <jobString>Making rockcrete blocks</jobString>
+        <workAmount>1600</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisites>
+            <li>POS_Research_Concrete_T1</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>StoneBlocks</li>
+                    </categories>
+                    <disallowedThingDefs>
+                        <li>POS_BlocksRockcrete</li>
+                        <li>POS_BlocksFerrocrete</li>
+                        <li>POS_BlocksPlascrete</li>
+                    </disallowedThingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+            <thingDefs>
+                <li>Chemfuel</li>
+            </thingDefs>
+            <disallowedThingDefs>
+                <li>POS_BlocksRockcrete</li>
+                <li>POS_BlocksFerrocrete</li>
+                <li>POS_BlocksPlascrete</li>
+            </disallowedThingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <categories>
+                <li>StoneBlocks</li>
+            </categories>
+            <thingDefs>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <POS_BlocksRockcrete>40</POS_BlocksRockcrete>
+        </products>
+    </RecipeDef>
+
+
+    <!--  ==== Ferrocrete blocks ==== -->
+    <RecipeDef>
+        <defName>POS_MakeBlocksFerrocrete</defName>
+        <label>make ferrocrete blocks</label>
+        <description>Smelt rockcrete and steel into ferrocrete.</description>
+        <jobString>Making ferrocrete blocks</jobString>
+        <workAmount>1800</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisites>
+            <li>POS_Research_Concrete_T2</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>POS_BlocksRockcrete</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>POS_BlocksRockcrete</li>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li>POS_BlocksRockcrete</li>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <POS_BlocksFerrocrete>50</POS_BlocksFerrocrete>
+        </products>
+    </RecipeDef>
+
+
+    <!--  ==== Plascrete blocks ==== -->
+    <RecipeDef>
+        <defName>POS_MakeBlocksPlascrete</defName>
+        <label>make plascrete blocks</label>
+        <description>Smelt rockcrete and plasteel into plascrete.</description>
+        <jobString>Making plascrete blocks</jobString>
+        <workAmount>2000</workAmount>
+        <workSpeedStat>SmeltingSpeed</workSpeedStat>
+        <effectWorking>Smelt</effectWorking>
+        <soundWorking>Recipe_Smelt</soundWorking>
+        <workSkill>Crafting</workSkill>
+        <researchPrerequisites>
+            <li>POS_Research_Concrete_T3</li>
+        </researchPrerequisites>
+        <recipeUsers>
+            <li>ElectricSmelter</li>
+        </recipeUsers>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>POS_BlocksRockcrete</li>
+                    </thingDefs>
+                </filter>
+                <count>40</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Chemfuel</li>
+                    </thingDefs>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>POS_BlocksRockcrete</li>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+        <defaultIngredientFilter>
+            <thingDefs>
+                <li>POS_BlocksRockcrete</li>
+                <li>Steel</li>
+                <li>Chemfuel</li>
+            </thingDefs>
+        </defaultIngredientFilter>
+        <products>
+            <POS_BlocksPlascrete>50</POS_BlocksPlascrete>
+        </products>
+    </RecipeDef>
+
+
+</Defs>
+
