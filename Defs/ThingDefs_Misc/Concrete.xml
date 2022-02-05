@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+    <!--  ==== Rockcrete blocks ====  -->
+
+    <ThingDef ParentName="StoneBlocksBase">
+        <defName>POS_BlocksRockcrete</defName>
+        <label>rockcrete blocks</label>
+        <description>Blocks of rockcrete, a concrete-like refined stone material.</description>
+        <graphicData>
+            <color>(161,157,148)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1</Mass>
+        </statBases>
+        <stuffProps>
+            <color>(161,157,148)</color>
+            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>rockcrete</stuffAdjective>
+            <statFactors>
+                <WorkToBuild>2</WorkToBuild>
+                <WorkToMake>1</WorkToMake>
+            </statFactors>
+            <statOffsets>
+                <WorkToBuild>70</WorkToBuild>
+                <Beauty>-1</Beauty>
+            </statOffsets>
+        </stuffProps>
+    </ThingDef>
+
+
+    <!--  ==== Ferrocrete blocks ====  -->
+
+    <ThingDef ParentName="StoneBlocksBase">
+        <defName>POS_BlocksFerrocrete</defName>
+        <label>ferrocrete blocks</label>
+        <description>Blocks of ferrocrete, a steel-reinforced concrete-like material.</description>
+        <graphicData>
+            <color>(88,86,84)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.5</Mass>
+            <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <color>(88,86,84)</color>
+            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>ferrocrete</stuffAdjective>
+            <statFactors>
+                <MaxHitPoints>2.1</MaxHitPoints>
+                <WorkToBuild>2</WorkToBuild>
+                <WorkToMake>1</WorkToMake>
+            </statFactors>
+            <statOffsets>
+                <WorkToBuild>70</WorkToBuild>
+            </statOffsets>
+        </stuffProps>
+    </ThingDef>
+
+
+    <!--  ==== Plascrete blocks ====  -->
+
+    <ThingDef ParentName="StoneBlocksBase">
+        <defName>POS_BlocksPlascrete</defName>
+        <label>plascrete blocks</label>
+        <description>Blocks of plascrete, an ultratech plasteel-reinforced concrete-like material.</description>
+        <graphicData>
+            <color>(174,187,193)</color>
+        </graphicData>
+        <statBases>
+            <Mass>1.25</Mass>
+            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <color>(174,187,193)</color>
+            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+            <stuffAdjective>plascrete</stuffAdjective>
+            <statFactors>
+                <Beauty>1.1</Beauty>
+                <MaxHitPoints>2.4</MaxHitPoints>
+                <WorkToBuild>2</WorkToBuild>
+                <WorkToMake>1</WorkToMake>
+            </statFactors>
+            <statOffsets>
+                <WorkToBuild>70</WorkToBuild>
+            </statOffsets>
+        </stuffProps>
+    </ThingDef>
+
+
+</Defs>
