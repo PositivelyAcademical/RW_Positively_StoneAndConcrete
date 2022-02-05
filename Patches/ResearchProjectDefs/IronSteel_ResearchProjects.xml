@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Iron and Steel (Continued)</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs</xpath>
+                    <value>
+
+
+                        <!--  ==== Steel processing ==== -->
+
+                        <ResearchProjectDef>
+                            <defName>POS_Research_Metals_T1</defName>
+                            <tab>POS_ResearchTab_General</tab>
+                            <label>steel processing</label>
+                            <description>Use bloomeries and smithies to forge iron ore into workable steel.</description>
+                            <baseCost>300</baseCost>
+                            <techLevel>Medieval</techLevel>
+                            <prerequisites>
+                                <li>Smithing</li>
+                            </prerequisites>
+                            <researchViewX>1</researchViewX>
+                            <researchViewY>1.4</researchViewY>
+                        </ResearchProjectDef>
+
+
+                        <!--  ==== Bulk steel processing ==== -->
+
+                        <ResearchProjectDef>
+                            <defName>POS_Research_Metals_T2</defName>
+                            <tab>POS_ResearchTab_General</tab>
+                            <label>bulk steel processing</label>
+                            <description>Use industrial smelters to more efficiently forge iron ore into workable steel.</description>
+                            <baseCost>1000</baseCost>
+                            <techLevel>Industrial</techLevel>
+                            <prerequisites>
+                                <li>POS_Research_Metals_T1</li>
+                                <li>Electricity</li>
+                            </prerequisites>
+                            <researchViewX>2</researchViewX>
+                            <researchViewY>1.4</researchViewY>
+                        </ResearchProjectDef>
+
+                    </value>
+                </li>
+
+
+                <!--  ==== Plasteel ====  -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="POS_Research_Metals_T3"]/prerequisites</xpath>
+                    <value>
+                        <li>POS_Research_Metals_T2</li>
+                    </value>
+                </li>
+
+
+                <!--  ==== Ferrocrete ====  -->
+
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ResearchProjectDef[defName="POS_Research_Concrete_T2"]/prerequisites</xpath>
+                    <value>
+                        <li>POS_Research_Metals_T2</li>
+                    </value>
+                </li>
+
+
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
