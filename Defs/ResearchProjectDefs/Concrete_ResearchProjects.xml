@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+<!--  ==== Rockcrete ====  -->
+
+    <ResearchProjectDef>
+        <defName>POS_Research_Concrete_T1</defName>
+        <tab>POS_ResearchTab_General</tab>
+        <label>rockcrete</label>
+        <description>Smelt and refine stone to produce rockcrete. This material is similar to stone, but much easier to work with.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>Machining</li>
+            <li>BiofuelRefining</li>
+        </prerequisites>
+        <researchViewX>2</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchTabDef>
+
+
+<!--  ==== Ferrocrete ====  -->
+
+    <ResearchProjectDef>
+        <defName>POS_Research_Concrete_T2</defName>
+        <tab>POS_ResearchTab_General</tab>
+        <label>ferrocrete</label>
+        <description>Reinforce rockcrete with steel to produce ferrocrete. This material combines the beneficial properties of stone and steel.</description>
+        <baseCost>1000</baseCost>
+        <techLevel>Industrial</techLevel>
+        <prerequisites>
+            <li>POS_Research_Concrete_T1</li>
+        </prerequisites>
+        <researchViewX>3</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchTabDef>
+
+
+<!--  ==== Plascrete ====  -->
+
+    <ResearchProjectDef>
+        <defName>POS_Research_Concrete_T3</defName>
+        <tab>POS_ResearchTab_General</tab>
+        <label>plascrete</label>
+        <description>Reinforce rockcrete with plasteel to produce plascrete. This material combines the beneficial properties of stone and plasteel.</description>
+        <baseCost>2000</baseCost>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>POS_Research_Concrete_T2</li>
+            <li>POS_Research_Metals_T3</li>
+        </prerequisites>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <researchViewX>5</researchViewX>
+        <researchViewY>2.1</researchViewY>
+    </ResearchTabDef>
+
+</Defs>
+
