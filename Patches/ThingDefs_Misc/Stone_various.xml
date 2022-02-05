@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+
+
+        <!--  ====  Sandstone  ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Sandstone"]/graphicData/color</xpath>
+                <value>
+                    <color>(207,184,140)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkSandstone"]/graphicData/color</xpath>
+                <value>
+                    <color>(207,184,140)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksSandstone"]</xpath>
+                <value>
+                    <ThingDef ParentName="StoneBlocksBase">
+                        <defName>BlocksSandstone</defName>
+                        <label>sandstone blocks</label>
+                        <description>Blocks of solid sandstone. Sandstone is a relatively soft rock and chips easily.</description>
+                        <graphicData>
+                            <color>(207,184,140)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>1</Mass>
+                            <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+                        </statBases>
+                        <stuffProps>
+                            <color>(207,184,140)</color>
+                            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+                            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+                            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+                            <stuffAdjective>sandstone</stuffAdjective>
+                            <statFactors>
+                                <Beauty>1.1</Beauty>
+                                <MaxHitPoints>1.4</MaxHitPoints>
+                                <WorkToBuild>5.0</WorkToBuild>
+                                <WorkToMake>1.1</WorkToMake>
+                            </statFactors>
+                            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+                        </stuffProps>
+                    </ThingDef>
+                </value>
+            </li>
+
+
+        <!--  ====  Granite  ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Granite"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,68,63)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkGranite"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,68,63)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksGranite"]</xpath>
+                <value>
+                    <ThingDef ParentName="StoneBlocksBase">
+                        <defName>BlocksGranite</defName>
+                        <label>granite blocks</label>
+                        <description>Blocks of solid granite. Granite is a very hard stone.</description>
+                        <graphicData>
+                            <color>(79,68,63)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>1.25</Mass>
+                            <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+                        </statBases>
+                        <stuffProps>
+                            <color>(79,68,63)</color>
+                            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+                            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+                            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+                            <stuffAdjective>granite</stuffAdjective>
+                            <statFactors>
+                                <MaxHitPoints>1.7</MaxHitPoints>
+                            </statFactors>
+                            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+                        </stuffProps>
+                    </ThingDef>
+                </value>
+            </li>
+
+
+        <!--  ====  Limestone  ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Limestone"]/graphicData/color</xpath>
+                <value>
+                    <color>(219,217,205)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkLimestone"]/graphicData/color</xpath>
+                <value>
+                    <color>(219,217,205)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksLimestone"]</xpath>
+                <value>
+                    <ThingDef ParentName="StoneBlocksBase">
+                        <defName>BlocksLimestone</defName>
+                        <label>limestone blocks</label>
+                        <description>Blocks of solid limestone.</description>
+                        <graphicData>
+                            <color>(219,217,205)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>1.1</Mass>
+                        </statBases>
+                        <stuffProps>
+                            <color>(219,217,205)</color>
+                            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+                            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+                            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+                            <stuffAdjective>limestone</stuffAdjective>
+                            <statFactors>
+                                <MaxHitPoints>1.55</MaxHitPoints>
+                            </statFactors>
+                            <statOffsets>
+                                <Beauty>1</Beauty>
+                            </statOffsets>
+                            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+                        </stuffProps>
+                    </ThingDef>
+                </value>
+            </li>
+
+
+        <!--  ====  Slate  ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Slate"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,83,88)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkSlate"]/graphicData/color</xpath>
+                <value>
+                    <color>(79,83,88)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksSlate"]</xpath>
+                <value>
+                    <ThingDef ParentName="StoneBlocksBase">
+                        <defName>BlocksSlate</defName>
+                        <label>slate blocks</label>
+                        <description>Blocks of solid slate. A lightweight rock that chips easily.</description>
+                        <graphicData>
+                            <color>(79,83,88)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>0.9</Mass>
+                        </statBases>
+                        <stuffProps>
+                            <color>(79,83,88)</color>
+                            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+                            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+                            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+                            <stuffAdjective>slate</stuffAdjective>
+                            <statFactors>
+                                <Beauty>1.1</Beauty>
+                                <MaxHitPoints>1.3</MaxHitPoints>
+                            </statFactors>
+                            <statOffsets>
+                                <Beauty>1</Beauty>
+                            </statOffsets>
+                            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+                        </stuffProps>
+                    </ThingDef>
+                </value>
+            </li>
+
+
+        <!--  ====  Marble  ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Marble"]/graphicData/color</xpath>
+                <value>
+                    <color>(250,251,253)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="ChunkMarble"]/graphicData/color</xpath>
+                <value>
+                    <color>(250,251,253)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="BlocksMarble"]</xpath>
+                <value>
+                    <ThingDef ParentName="StoneBlocksBase">
+                        <defName>BlocksMarble</defName>
+                        <label>marble blocks</label>
+                        <description>Blocks of solid marble. Marble is a soft, beautiful stone, known for being easy to sculpt.</description>
+                        <graphicData>
+                            <color>(250,251,253)</color>
+                        </graphicData>
+                        <statBases>
+                            <Mass>1.25</Mass>
+                        </statBases>
+                        <stuffProps>
+                            <color>(250,251,253)</color>
+                            <soundImpactStuff>BulletImpact_Ground</soundImpactStuff>
+                            <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+                            <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+                            <stuffAdjective>marble</stuffAdjective>
+                            <statFactors>
+                                <Beauty>1.35</Beauty>
+                                <MaxHitPoints>1.2</MaxHitPoints>
+                                <WorkToBuild>5.5</WorkToBuild>
+                                <WorkToMake>1.15</WorkToMake>
+                            </statFactors>
+                            <statOffsets>
+                                <Beauty>2</Beauty>
+                            </statOffsets>
+                            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+                        </stuffProps>
+                    </ThingDef>
+
+                </value>
+            </li>
+
+        </operations>
+    </Operation>
+
+</Patch>
