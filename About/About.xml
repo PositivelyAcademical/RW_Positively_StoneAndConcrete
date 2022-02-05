@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-    <name>PositivelyStoneAndConcrete</name>
+    <packageId>rimworld.positively.stone</packageId>
+    <name>Positively: Metal and Stone</name>
     <author>PositivelyAcademical</author>
     <url>https://github.com/PositivelyAcademical/RW_Positively_StoneAndConcrete</url>
+    <description>A u/PositivelyAcademical RimWorld mod.\n\nRebalances stone. Rebalances metals, and adds plasteel (and other supported alloys) crafting. Adds rockcrete, ferrocrete and plascrete.\n\nCompatable with Vanilla Expanded.\n\nIncompatible with Stuffed Floors.\n\nMay or may not work with other mods that rebalance or tweak vanilla stones.</description>
     <supportedVersions>
         <li>1.3</li>
     </supportedVersions>
-    <packageId>rimworld.positively.stone</packageId>
     <modDependencies>
     </modDependencies>
     <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ogliss.AdMech.Armoury</li>
+        <li>Mlie.CoalExpanded</li>
+        <li>jecrell.doorsexpanded</li>
+        <li>Mlie.VanillaIronandSteel</li>
+        <li>machine.rtr</li>
+        <li>Archaon.Primarch</li>
     </loadAfter>
-    <description>A u/PositivelyAcademical RimWorld mod.\n\nRebalances stone. Adds rockcrete, ferrocrete and plascrete.\n\nCompatable with Vanilla Expanded.\n\nIncompatible with Stuffed Floors.\n\nMay or may not work with other mods that rebalance or tweak vanilla stones.</description>
+    <loadBefore>
+        <li>rimworld.positively.compatability</li>
+    </loadBefore>
+    <incompatibleWith>
+        <li>syrchalis.stonerebalance</li>
+        <li>Fluffy.StuffedFloors</li>
+    </incompatibleWith>
 </ModMetaData>
