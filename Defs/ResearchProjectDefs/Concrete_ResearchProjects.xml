@@ -17,7 +17,7 @@
         </prerequisites>
         <researchViewX>2</researchViewX>
         <researchViewY>2.1</researchViewY>
-    </ResearchTabDef>
+    </ResearchProjectDef>
 
 
 <!--  ==== Ferrocrete ====  -->
@@ -34,7 +34,7 @@
         </prerequisites>
         <researchViewX>3</researchViewX>
         <researchViewY>2.1</researchViewY>
-    </ResearchTabDef>
+    </ResearchProjectDef>
 
 
 <!--  ==== Plascrete ====  -->
@@ -53,7 +53,7 @@
         <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
         <researchViewX>5</researchViewX>
         <researchViewY>2.1</researchViewY>
-    </ResearchTabDef>
+    </ResearchProjectDef>
 
 </Defs>
 
