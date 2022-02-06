@@ -51,16 +51,67 @@
                 <mods>
                     <li>Vanilla Iron and Steel</li>
                 </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
 
-                <match Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps/statFactors/Flammability</xpath>
-                    <value>
-                        <Flammability>0.10</Flammability>
-                    </value>
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps/statFactors/Flammability</xpath>
+                            <value>
+                                <Flammability>0.10</Flammability>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps</xpath>
+                            <value>
+                                <appearance>Metal</appearance>
+                            </value>
+                        </li>
+
+                    </operations>
                 </match>
-
             </li>
 
+
+            <!--  ==== LegionesAstartes ====  -->
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Legiones Astartes: Primarch</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+
+                        <!--  ==== Ceramite ====  -->
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="Ceramite"]/stuffProps</xpath>
+                            <value>
+                                <appearance>Metal</appearance>
+                            </value>
+                        </li>
+
+                        <!--  ==== Adamantium ====  -->
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="Adamantium"]/stuffProps</xpath>
+                            <value>
+                                <appearance>Metal</appearance>
+                            </value>
+                        </li>
+
+                        <!--  ==== Auramite ====  -->
+
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[defName="Auramite"]/stuffProps</xpath>
+                            <value>
+                                <appearance>Metal</appearance>
+                            </value>
+                        </li>
+
+                    </operations>
+                </match>
+            </li>
 
         </operations>
     </Operation>
