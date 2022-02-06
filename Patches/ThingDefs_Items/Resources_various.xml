@@ -5,7 +5,7 @@
         <operations>
 
 
-        <!--  ====  Silver ====  -->
+            <!--  ==== Silver ====  -->
 
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Silver"]/stuffProps/statFactors/Flammability</xpath>
@@ -15,7 +15,7 @@
             </li>
 
 
-        <!--  ====  Gold  ====  -->
+            <!--  ==== Gold ====  -->
 
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Gold"]/stuffProps/statFactors/Flammability</xpath>
@@ -25,13 +25,40 @@
             </li>
 
 
-        <!--  ====  Steel  ====  -->
+            <!--  ==== Steel ====  -->
 
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
                 <value>
                     <Flammability>0.10</Flammability>
                 </value>
+            </li>
+
+
+            <!--  ==== Jade ====  -->
+
+            <li Class="PatchOperationAdd">
+                <xpath>/Defs/ThingDef[defName="Jade"]/stuffProps</xpath>
+                <value>
+                    <appearance>Bricks</appearance>
+                </value>
+            </li>
+
+
+            <!--  ==== Iron ====  -->
+
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Iron and Steel</li>
+                </mods>
+
+                <match Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps/statFactors/Flammability</xpath>
+                    <value>
+                        <Flammability>0.10</Flammability>
+                    </value>
+                </match>
+
             </li>
 
 
