@@ -99,6 +99,13 @@
 
                         <!--  ==== Ceramite ====  -->
 
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="Ceramite"]/stuffProps/color</xpath>
+                            <value>
+                                <color>(128,128,128)</color>
+                            </value>
+                        </li>
+
                         <li Class="PatchOperationAdd">
                             <xpath>/Defs/ThingDef[defName="Ceramite"]/stuffProps</xpath>
                             <value>
