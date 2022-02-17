@@ -3,6 +3,7 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
+            <li>Vanilla Iron and Steel</li>
             <li>Vanilla Iron and Steel (Continued)</li>
         </mods>
         <match Class="PatchOperationSequence">
