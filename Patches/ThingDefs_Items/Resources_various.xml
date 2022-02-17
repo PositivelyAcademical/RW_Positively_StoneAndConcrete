@@ -125,6 +125,13 @@
 
                         <!--  ==== Adamantium ====  -->
 
+                        <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="Adamantium"]/stuffProps/color</xpath>
+                            <value>
+                                <color>(251,252,248)</color>
+                            </value>
+                        </li>
+
                         <li Class="PatchOperationAdd">
                             <xpath>/Defs/ThingDef[defName="Adamantium"]/stuffProps</xpath>
                             <value>
