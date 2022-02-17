@@ -10,7 +10,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Silver"]/stuffProps/statFactors/Flammability</xpath>
                 <value>
-                    <Flammability>0.10</Flammability>
+                    <Flammability>0</Flammability>
                 </value>
             </li>
 
@@ -20,7 +20,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Gold"]/stuffProps/statFactors/Flammability</xpath>
                 <value>
-                    <Flammability>0.10</Flammability>
+                    <Flammability>0</Flammability>
                 </value>
             </li>
 
@@ -30,7 +30,7 @@
             <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
                 <value>
-                    <Flammability>0.10</Flammability>
+                    <Flammability>0</Flammability>
                 </value>
             </li>
 
@@ -57,7 +57,7 @@
                         <li Class="PatchOperationReplace">
                             <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps/statFactors/Flammability</xpath>
                             <value>
-                                <Flammability>0.10</Flammability>
+                                <Flammability>0</Flammability>
                             </value>
                         </li>
 
