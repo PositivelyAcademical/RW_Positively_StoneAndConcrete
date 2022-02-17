@@ -55,6 +55,13 @@
                     <operations>
 
                         <li Class="PatchOperationReplace">
+                            <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps/color</xpath>
+                            <value>
+                                <color>(72,73,75)</color>
+                            </value>
+                        </li>
+
+                        <li Class="PatchOperationReplace">
                             <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps/statFactors/Flammability</xpath>
                             <value>
                                 <Flammability>0</Flammability>
