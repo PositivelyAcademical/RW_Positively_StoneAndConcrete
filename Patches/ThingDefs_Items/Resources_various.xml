@@ -42,6 +42,16 @@
             </li>
 
 
+            <!--  ==== Uranium ====  -->
+
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Uranium"]/stuffProps/color</xpath>
+                <value>
+                    <color>(129,131,128)</color>
+                </value>
+            </li>
+
+
             <!--  ==== Jade ====  -->
 
             <li Class="PatchOperationAdd">
