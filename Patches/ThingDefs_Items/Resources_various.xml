@@ -65,7 +65,7 @@
                         <li Class="PatchOperationReplace">
                             <xpath>/Defs/ThingDef[defName="NECIron"]/stuffProps/statFactors/Flammability</xpath>
                             <value>
-                                <Flammability>0</Flammability>
+                                <Flammability>0.05</Flammability>
                             </value>
                         </li>
 
