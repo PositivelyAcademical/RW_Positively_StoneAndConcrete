@@ -28,6 +28,13 @@
             <!--  ==== Steel ====  -->
 
             <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="Steel"]/stuffProps/color</xpath>
+                <value>
+                    <color>(119,123,126)</color>
+                </value>
+            </li>
+
+            <li Class="PatchOperationReplace">
                 <xpath>/Defs/ThingDef[defName="Steel"]/stuffProps/statFactors/Flammability</xpath>
                 <value>
                     <Flammability>0</Flammability>
